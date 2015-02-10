@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<script>
+var red=0;
+var green=0;
+var blue=50;
+</script>
+<body>
+
+<h1>What Can JavaScript Do?</h1>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<script>
+// alert('red is' + red);
+
+function moreRed() {
+    var demoText = document.getElementById("demo");
+    demoText.style.fontSize = "25px"; 
+    red=red+16;
+    var rgb_value = red + ',' + green + ',' + blue;
+    demoText.style.color = 'rgb('+rgb_value+')';      
+}
+
+function moreGreen() {
+    var demoText = document.getElementById("demo");
+    demoText.style.fontSize = "25px"; 
+    green=green+16;
+    var rgb_value = red + ',' + green + ',' + blue;
+    demoText.style.color = 'rgb('+rgb_value+')';      
+}
+
+function moreBlue() {
+    var demoText = document.getElementById("demo");
+    demoText.style.fontSize = "25px"; 
+    blue=blue+16;
+    var rgb_value = red + ',' + green + ',' + blue;
+    demoText.style.color = 'rgb('+rgb_value+')';      
+}
+
+function lessRed() {
+    var demoText = document.getElementById("demo");
+    demoText.style.fontSize = "25px"; 
+    red=red-16;
+    var rgb_value = red + ',' + green + ',' + blue;
+    demoText.style.color = 'rgb('+rgb_value+')';      
+}
+
+function lessGreen() {
+    var demoText = document.getElementById("demo");
+    demoText.style.fontSize = "25px"; 
+    green=green-16;
+    var rgb_value = red + ',' + green + ',' + blue;
+    demoText.style.color = 'rgb('+rgb_value+')';      
+}
+
+function lessBlue() {
+    var demoText = document.getElementById("demo");
+    demoText.style.fontSize = "25px"; 
+    blue=blue-16;
+    var rgb_value = red + ',' + green + ',' + blue;
+    demoText.style.color = 'rgb('+rgb_value+')';      
+}
+
+function showColors() {
+    var rgb_value = red + ',' + green + ',' + blue;
+    alert('Our color code is: ' + rgb_value);      
+}
+
+function bgBlack() {
+    document.body.style.background = "black";
+ }
+
+function bgWhite() {
+    document.body.style.background = "white";
+ }
+
+function bgGray() {
+    document.body.style.background = "gray";
+ }
+
+
+</script>
+
+<button type="button" onclick="moreRed()">More Red</button>
+<button type="button" onclick="moreGreen()">More Green</button>
+<button type="button" onclick="moreBlue()">More Blue</button>
+<br>
+<button type="button" onclick="lessRed()">Less Red</button>
+<button type="button" onclick="lessGreen()">Less Green</button>
+<button type="button" onclick="lessBlue()">Less Blue</button>
+<br>
+<br>
+<button type="button" onclick="showColors()">Show Colors</button>
+
+<br>
+<br>
+<button type="button" onclick="bgBlack()">On Black Background</button>
+<button type="button" onclick="bgWhite()">On White Background</button>
+<button type="button" onclick="bgGray()">On Gray Background</button>
+
+</body>
+</html> 
