@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<script>
+var red=0;
+var green=0;
+var blue=50;
+</script>
+<body>
+
+<h1>What Can JavaScript Do?</h1>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<script>
+// alert('red is' + red);
+
+function moreRed() {
+    var demoText = document.getElementById("demo");
+    demoText.style.fontSize = "25px";
+    red=red+16;
+    var rgb_value = red + ',' + green + ',' + blue;
+    demoText.style.color = 'rgb('+rgb_value+')';
+}
+
+function lessRed() {
+    var demoText = document.getElementById("demo");
+    demoText.style.fontSize = "25px";
+    red=red-16;
+    var rgb_value = red + ',' + green + ',' + blue;
+    demoText.style.color = 'rgb('+rgb_value+')';
+}
+
+
+
+
+
+</script>
+
+<button type="button" onclick="moreRed()">More Red</button>
+<br>
+<button type="button" onclick="lessRed()">Less Red</button>
+<br>
+
+</body>
+</html>
